@@ -239,81 +239,128 @@
         color: var(--cyber-neon) !important;
       }
 
-      /* --- LIGHT THEME OVERRIDES (Bila Di-Toggle) --- */
+ /* --- LIGHT THEME OVERRIDES (TEMA PUTIH-BIRU ELEGAN) --- */
       [data-bs-theme="light"] {
-        --cyber-bg: #f4f6f9;
-        --cyber-card: #ffffff;
-        --cyber-text: #212529;
+        --cyber-bg: #f4f7fc;      /* Latar belakang putih kebiruan super soft */
+        --cyber-card: #ffffff;    /* Card tetap putih bersih */
+        --cyber-text: #1e293b;    /* Warna teks biru gelap/navy (bukan hitam pekat) */
+      }
+
+      [data-bs-theme="light"] body {
+        color: var(--cyber-text) !important;
       }
 
       [data-bs-theme="light"] .navbar {
-        background-color: rgba(255, 255, 255, 0.8) !important;
-        border-bottom: 1px solid rgba(17, 0, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.85) !important;
+        border-bottom: 1px solid rgba(0, 123, 255, 0.2);
       }
 
       [data-bs-theme="light"] .navbar-brand {
-        color: #1100ff !important;
+        color: #007bff !important; /* Warna brand biru */
         text-shadow: none;
       }
 
       [data-bs-theme="light"] .nav-link {
-        color: #333333 !important;
+        color: #475569 !important; /* Warna menu abu-abu biru */
       }
 
       [data-bs-theme="light"] .nav-link:hover, [data-bs-theme="light"] .nav-link.active {
-        color: #1100ff !important;
-        background-color: rgba(17, 0, 255, 0.05);
+        color: #007bff !important;
+        background-color: rgba(0, 123, 255, 0.08);
       }
 
       [data-bs-theme="light"] .nav-link::after {
-        background: #1100ff;
+        background: #007bff;
       }
 
       [data-bs-theme="light"] .jumbotron {
-        background: linear-gradient(180deg, #ffffff 0%, #e9ecef 100%);
+        background: linear-gradient(180deg, #ffffff 0%, #e6effd 100%); /* Gradasi putih ke biru muda */
       }
 
       [data-bs-theme="light"] .jumbotron h1 {
-        color: #1100ff;
+        color: #0056b3; /* Nama berwarna biru tua */
       }
 
       [data-bs-theme="light"] .jumbotron p {
-        color: #333333;
+        color: #007bff; /* Teks mahasiswa berwarna biru */
         text-shadow: none;
       }
 
       [data-bs-theme="light"] .img-thumbnail {
-        border: 2px solid #1100ff !important;
-        box-shadow: 0 4px 15px rgba(17, 0, 255, 0.1) !important;
+        border: 2px solid #007bff !important;
+        box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15) !important;
+      }
+
+      /* Bagian About & Projek agar teksnya tidak hitam pekat */
+      [data-bs-theme="light"] #about, [data-bs-theme="light"] #projek {
+        background-color: #f8fafc !important;
+        color: #334155;
+      }
+      
+      [data-bs-theme="light"] h2.display-6 {
+        color: #0056b3 !important; /* Judul section jadi biru */
       }
 
       [data-bs-theme="light"] .card {
-        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        background-color: #ffffff !important;
+        border: 1px solid rgba(0, 123, 255, 0.1) !important;
+      }
+
+      [data-bs-theme="light"] .card-body {
+        background-color: #ffffff !important;
+        color: #475569 !important; /* Teks di dalam card abu-abu gelap kebiruan */
       }
 
       [data-bs-theme="light"] .card:hover {
-        border-color: #1100ff !important;
-        box-shadow: 0 10px 25px rgba(17, 0, 255, 0.15) !important;
+        border-color: #007bff !important;
+        box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15) !important;
+      }
+
+      /* Form Input versi Putih-Biru */
+      [data-bs-theme="light"] .form-control {
+        background-color: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #1e293b !important;
+      }
+
+      [data-bs-theme="light"] .form-control:focus {
+        border-color: #007bff !important;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.25) !important;
       }
 
       [data-bs-theme="light"] .btn-primary {
-        border-color: #1100ff !important;
-        color: #1100ff !important;
+        border-color: #007bff !important;
+        color: #007bff !important;
       }
 
       [data-bs-theme="light"] .btn-primary:hover {
-        background-color: #1100ff !important;
+        background-color: #007bff !important;
         color: #ffffff !important;
-        box-shadow: 0 4px 12px rgba(17, 0, 255, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
       }
 
+      /* Footer versi Putih-Biru */
       [data-bs-theme="light"] footer {
-        background-color: #ffffff !important;
-        border-top: 1px solid rgba(17, 0, 255, 0.1);
+        background-color: #e2e8f0 !important; /* Footer abu-abu terang bersih */
+        border-top: 1px solid rgba(0, 123, 255, 0.15);
       }
 
-      [data-bs-theme="light"] footer a {
-        color: #1100ff !important;
+      [data-bs-theme="light"] footer h5, 
+      [data-bs-theme="light"] footer .text-muted {
+        color: #334155 !important;
+      }
+
+      [data-bs-theme="light"] footer a, 
+      [data-bs-theme="light"] .fab {
+        color: #007bff !important;
+      }
+      
+      [data-bs-theme="light"] .fab:hover {
+        color: #0056b3 !important;
+      }
+      
+      [data-bs-theme="light"] #theme-toggle {
+        color: #007bff !important; /* Tombol toggle jadi biru saat light mode */
       }
     </style>
   </head>
